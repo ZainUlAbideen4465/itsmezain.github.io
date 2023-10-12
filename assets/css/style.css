@@ -77,19 +77,34 @@ h6 {
   line-height: 1;
   font-weight: 700;
   font-family: "Poppins", sans-serif;
+  text-align: left;
 }
 
 #header h1 a,
 #header h1 a:hover {
-  color: #fff;
+  color: #ffffff;
   line-height: 1;
   display: inline-block;
+  text-align: left;
+}
+@media screen and (max-width: 768px) {
+  h1 {
+      font-size: 24px; /* smaller font size for tablets */
+      text-align: left;
+  }
 }
 
+/* For mobile phones */
+@media screen and (max-width: 480px) {
+  h1 {
+      font-size: 16px; /* even smaller font size for mobile phones */
+      text-align: left;
+  }
+}
 #header h2 {
   font-size: 24px;
   margin-top: 20px;
-  color: rgba(255, 255, 255, 0.8);
+  color: #ff0000;
 }
 
 #header h2 span {
